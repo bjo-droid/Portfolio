@@ -147,6 +147,7 @@ header {
     width: 500px;
     margin: 1rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    margin-bottom: 2.5rem;
 }
 
 #about .card .about-text {
@@ -209,4 +210,38 @@ header {
   color: #12111f;
   border: 1px solid #fff;
   box-shadow: none;
+}
+
+@media screen and (max-width: 720px) {
+  header .about-text h1{
+      font-size: 4rem;
+  }
+
+  header .about-text h3{
+      font-size: 1.1rem;
+  }
+
+  #about .card{
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #about .card img{
+      max-width: 150px;
+      max-height: 150px;
+  }
+
+  #projects .project-card img{
+      max-width: 300px;
+      max-height: 300px;
+      margin-left: 5rem;
+  } 
+
+}
+
+@media screen and (max-width: 1200px) {
+  #projects .project-card img{
+      max-width: 300px;
+      max-height: 300px;
+  } 
 }
